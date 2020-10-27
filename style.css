@@ -1,0 +1,262 @@
+body
+{
+   background-image: url(backgroundgif.gif);
+   background-size:100%;
+   background-repeat: repeat-y;
+   background-attachment: fixed;
+   height:100%;
+   width:100%;
+}
+
+.beginning {
+    font-family: schoolteacher;
+    color: rgb(13, 44, 29);
+    font-size: 30px;
+    font-weight: bolder;
+ }
+
+div 
+{
+    border: 20px;
+    border-color: rgb(138, 77, 34);
+    border-style: groove;
+    margin: 250px auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 50px;
+    width: 500px;
+    background-image: url(bggg.png);
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+    background-size: cover;
+}
+
+.in-frame
+{
+   border-color: transparent;
+}
+
+.input-container
+{
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    border-style: dashed;
+    border-color: white;
+    border: 2px;
+    margin: 0px;
+    background-image: url(frame.png);
+    background-size: 230px 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+label
+{
+    margin-bottom: 10px;
+    font-family: eraserdust;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: schoolteacher;
+    src: url(SchoolTeacher-Regular.ttf);
+ }
+
+ @font-face {
+    font-family: eraserdust;
+    src: url(EraserDust.ttf);
+ }
+
+ @font-face {
+    font-family: greenpil;
+    src: url(GREENPIL.TTF);
+ }
+
+ @font-face {
+   font-family: lipstickrage;
+   src: url(Lipstick\ Rage.ttf);
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.521);
+    font-family: lipstickrage;
+    font-size: 15px;
+}
+
+input[type=text],input[type=number]
+{  
+    padding: 5px;
+    margin: 5px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    background:none;
+    color: white;
+    border-color: none;
+    border-style: none;
+    font-family: eraserdust;
+    font-size: 20px;
+    width: 115px;
+    text-align: center;
+    -moz-appearance: textfield;
+}
+
+input[type=number]
+{
+   border-bottom: rgba(255, 255, 255, 0.40);
+   border-style: dashed;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+}
+
+p{
+   font-family: eraserdust;
+   font-size: 13px;
+}
+
+input[type=number]:focus
+{
+   border-bottom: rgba(255, 255, 255, 0.40);
+   border-style: dashed;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   outline: none;
+   outline-style: none;
+ }
+
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+
+form
+{
+    padding: 10px;
+}
+
+input[name=c]{
+   pointer-events: none;
+}
+
+input[type=button] {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: greenpil;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-family: eraserdust;
+    width: 50px;
+ }
+
+input[name=h] {
+   font-size: 18px;
+   width: 100px !important;
+   height: 50px;
+}
+
+
+
+ input[type=button]:hover {
+    background-color: transparent;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 20px white;
+    
+}
+
+input[type=button]:focus {
+    background-color:transparent;
+    outline-style: none;
+    background-image: url(marker.png);
+    background-position: center;
+    background-size: 32px 30px;
+ }
+
+ input[name=h]:focus {
+   background-size: 60px 30px;
+ }
+
+ footer {
+    font-family: schoolteacher;
+    font-weight: bolder;
+    font-size: 22px;
+    color: rgb(13, 44, 29);
+ }
+
+ .author {
+    text-decoration-line: none;
+    color: rgb(24, 82, 54);
+
+ }
+
+ .button {
+    background-image: linear-gradient(rgb(24, 80, 53),rgb(33, 117, 77),rgb(39, 139, 91));
+    position: relative;
+    font-family: greenpil;
+    border-radius: 4px;
+    border: none;
+    text-decoration-line: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    font-size: 32px;
+    cursor: pointer;
+    color: teal;
+    animation-name: special;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+ }
+ 
+ .button:hover {
+    background-image: linear-gradient(rgb(39, 139, 91),rgb(33, 117, 77),rgb(24, 80, 53));
+   }
+ 
+ .button:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+ }
+ 
+ .button:focus {
+     background-color: rgb(82, 156, 133);
+     box-shadow: 0px 0px 4px 2px rgb(105, 204, 173);
+     border-color:rgb(105, 204, 173);
+     border-width: 1px;
+     outline-style: none;
+ }
+ 
+ .button-container {
+   margin: 250px auto;
+   margin-top: 0px;
+   background: none;
+   margin-bottom: 100px;
+   padding: 50px auto;
+   padding-top: 10px;
+   width: 800px;
+ 
+ }
+
+
+ @keyframes special {
+    0%   {color:teal; left:0px;}
+    50%  {color:turquoise; left:0px;}
+    100% {color:teal; left:0px; top:0px}
+  }
+
+
